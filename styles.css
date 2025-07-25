@@ -1,0 +1,68 @@
+
+
+/* Header styles */
+header {
+    
+    border-top:1opx solid maroon ;
+    background-color: navajowhite;
+    padding: 50px;
+    text-align: left;
+    border-bottom: 5px solid maroon;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: circle;
+    padding: 30;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 150px auto;
+    padding:  200px;
+    background-color: mediumturquoise;
+    border-bottom: 5px solid navy;
+}
+
+/* Tweet styles (for tweets.html) */
+.tweet {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.tweet header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: chocolate;
+    padding: 30;
+    border: maroon;
+    text-align: left;
+}
+
+.tweet .avatar {
+    width: 58px;
+    height: 78px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    text-align: bottom;
+    padding: 20px;
+    border-top: 1px solid coral;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: brown;
+}
