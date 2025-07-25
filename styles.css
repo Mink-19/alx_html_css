@@ -1,4 +1,12 @@
-
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
 
 /* Header styles */
 header {
@@ -25,12 +33,27 @@ nav a {
 
 /* Main content styles */
 main {
-    max-width: 800px;
-    margin: 150px auto;
+    display: flex;
+    flex-direction: row;
+     flex: auto; 
+      margin: 0;
     padding:  200px;
     background-color: mediumturquoise;
     border-bottom: 5px solid navy;
 }
+article {
+    flex: 2;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+/* Aside (1/3 width) with scrolling */
+aside {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: rgba(255,255,255,0.3);
+};
 
 /* Tweet styles (for tweets.html) */
 .tweet {
@@ -65,4 +88,10 @@ footer {
     margin-top: 20px;
     font-size: 0.9em;
     color: brown;
+}
+/*--responsive design--*/
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
 }
